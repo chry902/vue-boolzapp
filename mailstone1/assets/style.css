@@ -4,9 +4,11 @@
     padding: 0;
 }
 
-
+/********************
+struttura esterna 
+*********************/
 .container_1{
-    width: 1000px;
+    width: 100vw;
     height: 700px;
    
 }
@@ -17,18 +19,68 @@
     ;
 }
 .contain_1{
-    width: calc(100% /3);
+    width: 100%; 
     height: 100%;
     background-color: coral;
 }
 .contain_middle{
-    background-color: blanchedalmond;
-    width: 100%;
+    background-color: rgba(220, 219, 210, 1);
+    width: 90%;
     height: 100%;
 }
 
 .contain_left, .contain_right{
-    background-color: burlywood;
-    width: 20%;
+    background-color:rgba(220, 219, 210, 1);
+    width: 5%;
     height: 100%;
+}
+.fasce_div{
+    background-color: rgba(0, 150, 136, 1);
+    height: 80px;
+    width: 100%;
+}
+
+/********************
+struttura interna  
+*********************/
+
+.colon_left, .colon_right{
+    height: 98%;
+}
+
+.colon_left{
+    background-color: white;
+    width: 40%;
+    
+}
+.colon_right{
+    width: 60%;
+   
+    background-image: url("../img/mine.jpg");
+}
+
+/********************
+lato utenti  
+*********************/
+
+/***** mini nav*******/
+.user{
+    height: 80px;
+    background-color: aqua;
+    width: 100%;
+}
+.notifica{
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+.search_chatt{
+    border: 10px solid rgba(250, 250, 250, 1);
+    width: 100%;
+    height: 70px;
+}
+/***** utenti *******/
+.gruppo_utenti{
+    width: 100%;
+    height: calc(100% /4);
 }
