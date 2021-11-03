@@ -3,6 +3,33 @@
     margin: 0;
     padding: 0;
 }
+/**   utility                     **/
+
+
+.user_image{
+    width: 65px;
+    border-radius: 50px;
+    margin-left: 8px;
+    background-position: center;
+    
+}
+
+
+.font_s{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /********************
 struttura esterna 
@@ -21,12 +48,12 @@ struttura esterna
 .contain_1{
     width: 100%; 
     height: 100%;
-    background-color: coral;
+    background-color: rgba(220, 219, 210, 1);
 }
 .contain_middle{
     background-color: rgba(220, 219, 210, 1);
     width: 90%;
-    height: 100%;
+    height: 98%;
 }
 
 .contain_left, .contain_right{
@@ -44,7 +71,7 @@ struttura esterna
 struttura interna  
 *********************/
 
-.colon_left, .colon_right{
+.contain{
     height: 98%;
 }
 
@@ -55,32 +82,75 @@ struttura interna
 }
 .colon_right{
     width: 60%;
-   
+    height: 100%;
     background-image: url("../img/mine.jpg");
 }
 
 /********************
-lato utenti  
+    lato utenti  
 *********************/
 
-/***** mini nav*******/
-.user{
+
+/*****              mini nav        ***********/
+.mini_nav_user{
     height: 80px;
-    background-color: aqua;
-    width: 100%;
+    background-color: rgba(234, 234, 234, 1);
 }
+.mini_nav_user_icons{
+    width: 40%;
+    color:rgba(177, 177, 177, 1);
+}
+/**************************************/
 .notifica{
     width: 100%;
     height: 100px;
-    background-color: aquamarine;
+    background-color: rgba(142, 218, 252, 1);
 }
+.notifica .allert{
+    
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.notifica i{
+    color: rgba(142, 218, 252, 1);
+    padding: 1rem;
+}
+.text_notifica a{
+    color: gray;
+}
+
+/***************************************/
 .search_chatt{
     border: 10px solid rgba(250, 250, 250, 1);
     width: 100%;
     height: 70px;
 }
-/***** utenti *******/
+/******************************************/
+
+
+/*****              utenti              *******/
 .gruppo_utenti{
     width: 100%;
     height: calc(100% /4);
+}
+
+
+
+/********************
+    lato chatt  
+*********************/
+
+.nav_chatt, .input_chatt{
+    width: 100%;
+    height: 80px;
+    background-color: coral;
+
+}
+.nav_chatt{
+    width: calc(100% /2);
+}
+.input_chatt{
+width: calc(100% /3);
 }
