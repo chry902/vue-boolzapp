@@ -8,6 +8,7 @@
 
 .user_image{
     width: 65px;
+    height: 65px;
     border-radius: 50px;
     margin-left: 8px;
     background-position: center;
@@ -17,7 +18,9 @@
 
 .font_s{
     font-size: 13px;
+    color: gray;
 }
+
 
 
 
@@ -95,6 +98,7 @@ struttura interna
 .mini_nav_user{
     height: 80px;
     background-color: rgba(234, 234, 234, 1);
+    border-right: 2px solid rgb(221, 221, 221);
 }
 .mini_nav_user_icons{
     width: 40%;
@@ -133,9 +137,17 @@ struttura interna
 /*****              utenti              *******/
 .gruppo_utenti{
     width: 100%;
-    height: calc(100% /4);
+    height:100% ;
+}
+.utenti{
+    height: 110px;
+    padding: 1rem 1rem;
+    border-bottom:3px solid rgba(250, 250, 250, 1);
 }
 
+.utenti h4{
+    margin-left: 2rem;
+}
 
 
 /********************
@@ -145,12 +157,24 @@ struttura interna
 .nav_chatt, .input_chatt{
     width: 100%;
     height: 80px;
-    background-color: coral;
+    background-color: rgba(234, 234, 234, 1);
 
 }
-.nav_chatt{
-    width: calc(100% /2);
+.nav_chatt_left>p{
+
+    
 }
-.input_chatt{
-width: calc(100% /3);
+.nav_chatt_left .nav_chatt_rigth{
+    width: calc(100% /2);
+
+}
+.nav_chatt_rigth, i{
+    padding: 0 1rem;
+    color:rgb(104, 103, 103);
+}
+.input_chatt_middle>input{
+    width: 440px;
+    height: 53px;
+    border-radius: 10px;
+    border-color: white;
 }
