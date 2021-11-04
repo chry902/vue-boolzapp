@@ -8,7 +8,6 @@ const app = new Vue({
     el: "#app",
     data:
     {
-        counter: 0,
         contacts: [
 
             {
@@ -193,12 +192,9 @@ const app = new Vue({
 
             },
 
-        ]
+        ],
 
-
-
-
-
+        activeContact: 0,
 
     },
 

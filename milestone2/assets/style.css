@@ -23,7 +23,9 @@
 
 
 
-
+.icon_s{
+    font-size: 1.5rem;
+}
 
 
 
@@ -39,7 +41,7 @@ struttura esterna
 *********************/
 .container_1{
     width: 100vw;
-    height: 700px;
+    height: 100vh;
    
 }
 .container_top{
@@ -81,7 +83,7 @@ struttura interna
 .colon_left{
     background-color: white;
     width: 40%;
-    
+    height: 100%;
 }
 .colon_right{
     width: 60%;
@@ -131,6 +133,7 @@ struttura interna
     border: 10px solid rgba(250, 250, 250, 1);
     width: 100%;
     height: 70px;
+    
 }
 .mini_nav_input>i{
     left: 15px;
@@ -148,12 +151,13 @@ i>span{
 /*****              utenti              *******/
 .gruppo_utenti{
     width: 100%;
-    height:100% ;
+    height:100%;
+    overflow: hidden;
 }
 .utenti{
     height: 110px;
     padding: 1rem 1rem;
-    border-bottom:3px solid rgba(250, 250, 250, 1);
+    border-top:3px solid rgba(250, 250, 250, 1);
 }
 
 .utenti h4{
@@ -187,7 +191,7 @@ i>span{
     width: 440px;
     height: 53px;
     border-radius: 10px;
-    border-color: white;
+    border-style: none;
 }
 .input_chatt_middle>p{
     font-size: 15px;
@@ -195,4 +199,5 @@ i>span{
     left: 15px;
     top: 15px;
     color: gray;
+    border-style: none;
 }

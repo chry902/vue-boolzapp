@@ -37,9 +37,9 @@
                         </div>
 
                         <div class="mini_nav_user_icons d-flex justify-content-around align-items-center">
-                            <i class="fas fa-circle-notch fa-2x"></i>
-                            <i class="fas fa-comment-alt fa-2x"></i>
-                            <i class="fas fa-ellipsis-v fa-2x"></i>
+                            <i class="icon_s fas fa-circle-notch"></i>
+                            <i class="icon_s fas fa-comment-alt"></i>
+                            <i class="icon_s fas fa-ellipsis-v"></i>
                         </div>
                         
                     </div>
@@ -64,7 +64,7 @@
                 </div>
          <!-------------------------utenti-->       
                 <div class="gruppo_utenti">
-                    <div class="utenti d-flex" v-for="(contact, index) in contacts">        
+                    <div class="utenti d-flex" v-for="(contact, index) in contacts" :class="index === activeContact ? `active` : ``">        
                         <img class="user_image" :src="contact.foto" alt="">
                         <h4 class="fs-5">{{contact.name}}</h4>
                     </div>
@@ -93,35 +93,35 @@
                 
                 <div class="nav_chatt d-flex justify-content-between">
 
-                    <div class="nav_chatt_left">
+                    <!--<div class="nav_chatt_left">
                         <div class="d-flex align-items-center">
-                            <img class="user_image" src="./img/avatar_1.jpg" alt="">
+                            <img class="user_image" :src="contact[activeContact].foto" alt="">
                             <div class="d-flex justify-content-center  flex-column px-3 pt-3">
-                                <h4 class="fs-6">Michele</h4>
-                                 <p class="font_s">Ultimo accesso oggi alle</p>
+                                <h4 class="fs-6">{{contacts[activeContact].name</h4>
+                                 <p class="font_s">{{contacts[activeContact].date</p>
                             </div>
                             
                         </div>
-                    </div>
+                    </div>-->
 
                     <div class="nav_chatt_right d-flex align-items-center">
-                        <i class="fas fa-search fa-2x"></i>
-                        <i class="fas fa-paperclip fa-2x"></i>
-                        <i class="fas fa-ellipsis-v fa-2x"></i>
+                        <i class="icon_s fas fa-search "></i>
+                        <i class="icon_s fas fa-paperclip "></i>
+                        <i class="icon_s fas fa-ellipsis-v "></i>
                     </div>
 
                 </div>
 
                 <div class="input_chatt d-flex align-items-center justify-content-between">
                     
-                    <i class="far fa-smile fa-2x"></i>
+                    <i class="icon_s far fa-smile "></i>
 
                     <div class="input_chatt_middle position-relative">
-                        <p class="position-absolute">Scrivi un messaggio</p>
-                        <input type="text"  name="" id="">
+                        
+                        <input type="text" placeholder="scrivi un messaggio"  name="" id="">
                     </div>
 
-                    <i class="fas fa-microphone fa-2x"></i>
+                    <i class="icon_s fas fa-microphone "></i>
 
                 </div>
             </div>
