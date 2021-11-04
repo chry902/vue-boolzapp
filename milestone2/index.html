@@ -64,7 +64,7 @@
                 </div> 
          <!-------------------------utenti-->       
                 <div class="gruppo_utenti">
-                    <div class="utenti d-flex" v-for="(contact, index) in contacts" :class="index === activeContact ? `active` : ``">        
+                    <div class="utenti d-flex" v-on:click="activeContact= index" v-for="(contact, index) in contacts" :class="index === activeContact ? `active` : ``">        
                         <img class="user_image" :src="contact.foto" alt="">
                         <h4 class="fs-5">{{contact.name}}</h4>
                     </div>
@@ -93,16 +93,16 @@
                 
                 <div class="nav_chatt d-flex justify-content-between">
 
-                    <!--<div class="nav_chatt_left">
+                    <div class="nav_chatt_left">
                         <div class="d-flex align-items-center">
-                            <img class="user_image" :src="contact[activeContact].foto" alt="">
+                            <img class="user_image" :src="contacts[activeContact].foto" alt="">
                             <div class="d-flex justify-content-center  flex-column px-3 pt-3">
-                                <h4 class="fs-6">{{contacts[activeContact].name</h4>
-                                 <p class="font_s">{{contacts[activeContact].date</p>
+                                <h4 class="fs-6">{{contacts[activeContact].name}}</h4>
+                                 <p class="font_s">Ultimo accesso oggi alle 10:00 am</p>
                             </div>
                             
                         </div>
-                    </div>-->
+                    </div>
 
                     <div class="nav_chatt_right d-flex align-items-center">
                         <i class="icon_s fas fa-search "></i>
@@ -111,7 +111,12 @@
                     </div>
 
                 </div>
-
+                <div class="chatt_disply row" v-for="(messages, index) in contacts[activeContact].messages">
+                    <div class="col4">{{}}</div>
+                    <div class="col4"></div>
+                    <div class="col4"></div>
+                    <div class="col4"></div>
+                </div>
                 <div class="input_chatt d-flex align-items-center justify-content-between">
                     
                     <i class="icon_s far fa-smile "></i>
