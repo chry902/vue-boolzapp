@@ -8,6 +8,7 @@ const app = new Vue({
     el: "#app",
     data:
     {
+        newText: ``,
         contacts: [
 
             {
@@ -196,20 +197,17 @@ const app = new Vue({
 
         activeContact: 0,
 
+    },
+
+
+    addText() {
+
+        this.text.push(this.newText)
+
+
+        this.newText = ``
     }
-
-
-    /* addMess() {
-         if (this.newMess != `` && this.newMess.length > 5) {
-             this.mess.push(this.newMess)
-             this.error = false
-         } else {
-             this.error = true;
-         }
-         this.newMess = ``
-     }*/
 
 
 })
 
-/**v-model="newMess" v-on:keyup.enter="addMess" */

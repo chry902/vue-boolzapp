@@ -107,7 +107,7 @@
 
                     <div class="input_chatt_middle position-relative" >
                         
-                        <input type="text" placeholder="     scrivi un messaggio"  name="" id="">
+                        <input type="text" placeholder="     scrivi un messaggio"  name="" id="" v-model="newText" v-on:keyup.enter="addText">
                     </div>
 
                     <i class="icon_s fas fa-microphone "></i>
