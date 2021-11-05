@@ -196,6 +196,20 @@ const app = new Vue({
 
         activeContact: 0,
 
-    },
+    }
+
+
+    /* addMess() {
+         if (this.newMess != `` && this.newMess.length > 5) {
+             this.mess.push(this.newMess)
+             this.error = false
+         } else {
+             this.error = true;
+         }
+         this.newMess = ``
+     }*/
+
 
 })
+
+/**v-model="newMess" v-on:keyup.enter="addMess" */

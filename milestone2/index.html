@@ -56,8 +56,8 @@
                         </div>
                     </div>
                     <div class="mini_nav_input position-relative">
-                        <i class="position-absolute fas fa-search "><span>Cerca o inizia una nuova chat</span> </i>
-                        <input class="search_chatt" value="  " type="search" name="" id="">
+                        
+                        <input class="search_chatt" placeholder="&#128269         Cerca o inizia una nuova chat  " type="search" name="" id="">
                     </div>
                      
                     
@@ -68,23 +68,6 @@
                         <img class="user_image" :src="contact.foto" alt="">
                         <h4 class="fs-5">{{contact.name}}</h4>
                     </div>
-                    <!--
-                    <div class="utenti d-flex">        
-                        <img class="user_image" src="./img/avatar_2.jpg" alt="">
-                        <h4 class="fs-5">Fabio</h4>
-                    </div>
-
-                    <div class="utenti d-flex">        
-                        <img class="user_image" src="./img/avatar_3.jpg" alt="">
-                        <h4 class="fs-5">Samuele</h4>
-                    </div>
-
-                    <div class="utenti d-flex">        
-                        <img class="user_image" src="./img/avatar_6.jpg" alt="">
-                        <h4 class="fs-5">Luisa</h4>
-                    </div>
-                    -->
-                    
                 </div>
                 
             </div>
@@ -111,19 +94,20 @@
                     </div>
 
                 </div>
-                <div class="chatt_disply row" v-for="(messages, index) in contacts[activeContact].messages">
-                    <div class="col4">{{}}</div>
-                    <div class="col4"></div>
-                    <div class="col4"></div>
-                    <div class="col4"></div>
+                <div class="chatt_disply d-flex flex-column " >
+                    <div v-for="message in contacts[activeContact].messages" :class="message.status === `sent` ? `sent` : `received`" class="message col4">
+                        <div class="message_text">{{message.text}}</div>
+                        <div class="message_date">{{message.date}}</div>
+                    </div>
+                    
                 </div>
                 <div class="input_chatt d-flex align-items-center justify-content-between">
                     
                     <i class="icon_s far fa-smile "></i>
 
-                    <div class="input_chatt_middle position-relative">
+                    <div class="input_chatt_middle position-relative" >
                         
-                        <input type="text" placeholder="scrivi un messaggio"  name="" id="">
+                        <input type="text" placeholder="     scrivi un messaggio"  name="" id="">
                     </div>
 
                     <i class="icon_s fas fa-microphone "></i>

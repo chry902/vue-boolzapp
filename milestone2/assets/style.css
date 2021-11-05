@@ -191,7 +191,7 @@ i>span{
 }
 .input_chatt_middle>input{
     width: 440px;
-    height: 53px;
+    height: 40px;
     border-radius: 10px;
     border-style: none;
 }
@@ -202,4 +202,25 @@ i>span{
     top: 15px;
     color: gray;
     border-style: none;
+}
+/*************** chatt ***************/
+.chatt_disply{
+    height: 100%;
+    overflow: auto;
+}
+
+
+.message.sent{
+    align-self: flex-end;
+    background-color: rgba(213, 249, 186, 1);
+}
+
+.message.received{
+   align-self: flex-start;
+   background-color: white; 
+}
+.message.sent, .message.received{
+    padding: 0.5rem 1rem;
+    border-radius: 14px;
+    margin: 14px 13px;
 }
