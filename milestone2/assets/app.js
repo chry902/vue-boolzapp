@@ -8,7 +8,7 @@ const app = new Vue({
     el: "#app",
     data:
     {
-        newText: ``,
+        newText: "",
         contacts: [
 
             {
@@ -198,15 +198,39 @@ const app = new Vue({
         activeContact: 0,
 
     },
+    methods: {
+        addText() {
 
+            //this.text.push(this.newText)
+            let newMessage = this.newText;
 
-    addText() {
+            let contactActive = this.contacts[this.activeContact]
 
-        this.text.push(this.newText)
+            contactActive.messages.push({
 
+                date: moment().format('DD/MM/YYYY hh:mm:ss'),
 
-        this.newText = ``
+                text: newMessage,
+
+                status: 'sent'
+
+            })
+            this.newText = "";
+            setTimeout(() => {
+                contactActive.messages.push({
+
+                    date: moment().format('DD/MM/YYYY hh:mm:ss'),
+
+                    text: `ok`,
+
+                    status: 'received'
+
+                })
+            }, 1000)
+        },
     }
+
+
 
 
 })
